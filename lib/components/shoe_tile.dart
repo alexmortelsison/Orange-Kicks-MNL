@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:orange_kicks_mnl/models/shoe.dart';
 
 class ShoeTile extends StatelessWidget {
-  Shoe shoe;
-  ShoeTile({
+  final Shoe shoe;
+  const ShoeTile({
     super.key,
     required this.shoe,
   });
