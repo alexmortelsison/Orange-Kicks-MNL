@@ -22,9 +22,12 @@ class ShoeTile extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             child: Image.asset(shoe.imagePath),
           ),
-          Text(
-            shoe.description,
-            style: TextStyle(color: Colors.grey[600]),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25),
+            child: Text(
+              shoe.description,
+              style: TextStyle(color: Colors.grey[600]),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 25),
@@ -39,7 +42,7 @@ class ShoeTile extends StatelessWidget {
                       shoe.name,
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                        fontSize: 12,
                       ),
                     ),
                     const SizedBox(height: 5),
