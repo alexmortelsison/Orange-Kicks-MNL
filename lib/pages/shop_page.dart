@@ -18,8 +18,22 @@ class _ShopPageState extends State<ShopPage> {
     showDialog(
       context: context,
       builder: (context) => const AlertDialog(
-        title: Text('Successfully added!'),
-        content: Text('Check your cart'),
+        backgroundColor: Color.fromARGB(255, 228, 124, 6),
+        title: Text(
+          'Successfully added!',
+          style: TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        content: Text(
+          'Check your cart',
+          style: TextStyle(
+            fontSize: 12,
+            color: Colors.white,
+          ),
+        ),
       ),
     );
   }

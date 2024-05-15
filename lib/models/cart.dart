@@ -28,19 +28,22 @@ class Cart extends ChangeNotifier {
       name: 'Stan Smith x KSENIASCHNAIDER',
       price: '98',
       imagePath: 'images/4.png',
-      description: '',
+      description:
+          'Their smooth leather upper, perforated with the iconic 3-Stripes, nods to adidas heritage while feeling fresh. ',
     ),
     Shoe(
       name: 'Campus 2.0 KORN',
       price: '120',
       imagePath: 'images/5.png',
-      description: '',
+      description:
+          'The vintage style with high-quality suede on the upper and classic silhouette create a retro and cool mood that is synonymous with this sneaker.',
     ),
     Shoe(
       name: 'Bad Bunny Last Campus',
       price: '155',
       imagePath: 'images/6.png',
-      description: '',
+      description:
+          'A classic Adidas masterpiece is evolved, drawing inspiration from Benito\'s signature brown mask and the cowboy and western illustrations on his latest album cover.',
     ),
     Shoe(
       name: 'Star Player 76 Premium Canvas',
