@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:orange_kicks_mnl/models/shoe.dart';
 
 class ShoeTile extends StatelessWidget {
+  final Function()? onTap;
   final Shoe shoe;
   const ShoeTile({
     super.key,
     required this.shoe,
+    required this.onTap,
   });
 
   @override
@@ -52,15 +55,18 @@ class ShoeTile extends StatelessWidget {
                     ),
                   ],
                 ),
-                Container(
-                  padding: const EdgeInsets.all(20),
-                  decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 255, 136, 0),
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(12),
-                        bottomRight: Radius.circular(12)),
+                GestureDetector(
+                  onTap: onTap,
+                  child: Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: const BoxDecoration(
+                      color: Color.fromARGB(255, 255, 136, 0),
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(12),
+                          bottomRight: Radius.circular(12)),
+                    ),
+                    child: const Icon(Icons.add, color: Colors.white),
                   ),
-                  child: const Icon(Icons.add, color: Colors.white),
                 ),
               ],
             ),
